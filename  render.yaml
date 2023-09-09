@@ -1,11 +1,11 @@
 databases:
   - name: carbooker
-    databaseName: carbooker
-    user: carbooker_user
+    databaseName: carbooker_36me
+    user: carbooker_36me_user
 
 services:
   - type: web
-    name: carbooker
+    name: carBooker-backend
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
