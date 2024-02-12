@@ -15,7 +15,7 @@
             "id": "rails-app",
             "name": "Rails App",
             "buildType": "nixpacks",
-            "buildCommand": "bundle exec rails db:migrate",
+            "buildCommand": "bundle install && bundle exec rails db:migrate",
             "cpu": 0.5,
             "memory": 1,
             "containerInsights": false,
