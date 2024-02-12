@@ -20,6 +20,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: yodit
   password: 123456
+  sslmode: prefer
 development:
   <<: *default
   database: car_reservation_api_development
