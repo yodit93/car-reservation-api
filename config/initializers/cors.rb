@@ -9,16 +9,16 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     origins "http://localhost:3000" # Update this with the actual URL of your frontend server
 
-    resource "*", 
+    resource "*",
       headers: :any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head],
       credentials: true
   end
 
   allow do
-    origins "https://car-reservation-app.onrender.com" # Update this with the actual URL of your frontend server
+    origins "https://car-reservation-front-end.netlify.app/" # Update this with the actual URL of your frontend server
 
-    resource "*", 
+    resource "*",
       headers: :any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head],
       credentials: true
