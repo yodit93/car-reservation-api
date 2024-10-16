@@ -16,7 +16,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
 
   allow do
-    origins "https://car-reservation-front-end.netlify.app" # Update this with the actual URL of your frontend server
+    origins "https://car-reservation-app.onrender.com" # Update this with the actual URL of your frontend server
 
     resource "*",
       headers: :any,
